@@ -3,10 +3,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => (
-  <div>
-    <Header />
+  <div id="container">
+    <header>
+      <Header />
+    </header>
     {children}
-    <Footer />
+    <footer>
+      <Footer />
+    </footer>
   </div>
 );
 export default Layout;

@@ -1,10 +1,10 @@
 import React from "react";
 
 const Footer = () => (
-  <nav>
+  <div>
     <p>Link 1</p>
     <p>Link 2</p>
     <p>Link 3</p>
-  </nav>
+  </div>
 );
 export default Footer;

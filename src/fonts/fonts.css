@@ -1,0 +1,22 @@
+/*default version*/
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Regular.otf");
+  src: local("Source Sans Pro"), local("Source-Sans-Pro"),
+    url("../fonts/SourceSansPro-Regular.otf") format("opentype");
+}
+/*bold version*/
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Bold.otf");
+  src: local("Source Sans Pro Bold"), local("Source-Sans-Pro-Bold"),
+    url("../fonts/SourceSansPro-Bold.otf") format("opentype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "SourceSansPro";
+  src: url("../fonts/SourceSansPro-Light.otf");
+  src: local("Source Sans Pro Light"), local("Source-Sans-Pro-Light"),
+    url("../fonts/SourceSansPro-Light.otf") format("opentype");
+  font-weight: lighter;
+}
