@@ -38,6 +38,21 @@ const MyApp = ({ Component, pageProps }) => {
             color: #fff;
             font-weight: lighter;
           }
+          h5 {
+            font-size: 22px;
+            line-height: 22px;
+            font-weight: bold;
+            color: #ee2d1c;
+          }
+          a {
+            color: #88939e;
+            font-size: 22px;
+            line-height: 28px;
+            text-decoration: none !important;
+          }
+          a:hover {
+            color: #4c4c51;
+          }
         `}</style>
       </Layout>
     </div>
