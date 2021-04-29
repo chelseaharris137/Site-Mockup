@@ -1,5 +1,4 @@
 import React from "react";
-import css from "styled-jsx/css";
 import Background from "../images/hero-image.png";
 import Logo from "../images/logo.png";
 import UserImage from "../images/user-icon.png";

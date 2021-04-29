@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import VideoContent from "../../api/vimeo.json";
 import Playbtn from "../images/playbtn.png";
 import TextBanner from "../components/TextBanner";
@@ -9,14 +9,18 @@ const Video = () => {
       {VideoContent.map((elem, idx) => {
         const imgArray = elem.thumbnail_large.split("");
         const img = imgArray.join("");
-        if (elem.title !== "Battleground") {
+        //i want to dagerously set the html and limit the display to a certain number of characters
+        if (elem.title !== "Battleground" && elem.description) {
           return (
             <div className="row" id={idx}>
               <div className="column" id={`description-${idx}`}>
                 <a href={elem.url} target="_blank">
                   <h2>{elem.title}</h2>
                 </a>
-                <p>INSERT DESCRIPTION HERE</p>
+                <p
+                  className="text"
+                  dangerouslySetInnerHTML={{ __html: elem.description }}
+                ></p>
               </div>
               <div className="column" id={`video-${idx}`}>
                 <a href={elem.url} target="_blank">
@@ -44,12 +48,18 @@ const Video = () => {
           float: left;
           width: 50%;
         }
-
         .row:after {
           content: "";
           display: table;
           clear: both;
           padding-bottom: 40px;
+        }
+        .text {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
         }
         #thumbnail {
           width: 400px;
