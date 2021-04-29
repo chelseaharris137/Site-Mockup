@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import VideoContent from "../../api/vimeo.json";
 import Playbtn from "../images/playbtn.png";
 import TextBanner from "../components/TextBanner";
@@ -21,6 +21,11 @@ const Video = () => {
                   className="text"
                   dangerouslySetInnerHTML={{ __html: elem.description }}
                 ></p>
+                <a href={elem.url} target="_blank">
+                  <label>read more</label>
+                </a>
+                <br />
+                &nbsp;
               </div>
               <div className="column" id={`video-${idx}`}>
                 <a href={elem.url} target="_blank">
@@ -58,7 +63,7 @@ const Video = () => {
           overflow: hidden;
           text-overflow: ellipsis;
           display: -webkit-box;
-          -webkit-line-clamp: 3;
+          -webkit-line-clamp: 1;
           -webkit-box-orient: vertical;
         }
         #thumbnail {
@@ -72,6 +77,10 @@ const Video = () => {
           top: 25%;
           bottom: 0;
           margin: auto;
+        }
+        label {
+          color: red;
+          text-decoration: underline;
         }
         @media screen and (max-width: 600px) {
           .column {
