@@ -12,19 +12,27 @@ const Footer = () => (
       <Link href="/about-us">
         <a>About Us</a>
       </Link>
-      <a>Edit Profile</a>
+      <Link href="/account#update-delete">
+        <a>Edit Profile</a>
+      </Link>
       <Link href="/press">
         <a>Press</a>
       </Link>
-      <a>Friends</a>
+      <Link href="/account#friends">
+        <a>Friends</a>
+      </Link>
       <Link href="/policies">
         <a>Policies</a>
       </Link>
-      <a>Social</a>
+      <Link href="/account#social">
+        <a>Social</a>
+      </Link>
       <Link href="/help">
         <a>Help</a>
       </Link>
-      <a>Delete Profile</a>
+      <Link href="/account#update-delete">
+        <a>Delete Profile</a>
+      </Link>
     </div>
     <hr />
     <BottomNav />
