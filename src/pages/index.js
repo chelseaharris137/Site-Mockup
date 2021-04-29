@@ -1,12 +1,14 @@
 import React from "react";
-import Head from "next/head";
 import { useRouter } from "next/router";
-import Layout from "../components/Layout";
+import Video from "../components/Video";
 
 const Page = () => {
   const router = useRouter();
   return (
-    <div>ajkshdfkjasjkkfhaskjdfkasjbdckjasdnckjsdcjnsdkjaskjdcakjsdckjasck</div>
+    <div id="video-container">
+      <Video />
+      <style jsx>{``}</style>
+    </div>
   );
 };
 

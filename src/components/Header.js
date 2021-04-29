@@ -5,45 +5,6 @@ import Logo from "../images/logo.png";
 import UserImage from "../images/user-icon.png";
 import Link from "next/link";
 
-const styles = css`
-  .header {
-    width: 100%;
-    height: 500px;
-  }
-  .image-container {
-    background-image: url("${Background}");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
-  nav {
-    display: grid;
-    grid-template-columns: 1fr 65% 0.8fr 0.8fr 0.8fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: ". . . . .";
-    padding: 30px 10% 30px 10%;
-  }
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  #cta-copy {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    padding: 0px;
-  }
-  #cta-copy p {
-    color: #fff !important;
-  }
-  .nav-link {
-    padding-top: 5px;
-  }
-`;
-
 const Header = () => (
   <div className="header">
     <div className="image-container">
@@ -82,7 +43,51 @@ const Header = () => (
       </div>
     </div>
 
-    <style jsx>{styles}</style>
+    <style jsx>
+      {`
+        .header {
+          width: 100%;
+          height: 500px;
+        }
+        .image-container {
+          background-image: url("${Background}");
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
+        nav {
+          display: grid;
+          grid-template-columns: 1fr 65% 0.8fr 0.8fr 0.8fr;
+          grid-template-rows: 1fr;
+          gap: 0px 0px;
+          grid-template-areas: ". . . . .";
+          padding: 30px 10% 30px 10%;
+        }
+        nav a {
+          color: #fff;
+          text-decoration: none;
+        }
+        #cta-copy {
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          padding: 0px;
+        }
+        #cta-copy p {
+          color: #fff !important;
+        }
+        .nav-link {
+          padding-top: 5px;
+        }
+        @media (max-width: 459px) {
+          .nav-link {
+            display: none;
+          }
+        }
+      `}
+    </style>
   </div>
 );
 export default Header;

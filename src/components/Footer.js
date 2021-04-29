@@ -32,12 +32,12 @@ const Footer = () => (
     <style jsx>
       {`
         .footer {
-          position: fixed;
+          position: relative;
           left: 0;
           bottom: 0;
           width: 80%;
           text-align: left;
-          margin: 40px 10% 0px 10%;
+          margin: 0px 10% 0px 10%;
         }
         #nav-heading {
           display: grid;

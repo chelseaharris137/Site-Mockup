@@ -14,6 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
         <main>
           <Component {...pageProps} />
         </main>
+
         <style jsx global>{`
           body {
             margin: 0 !important;
@@ -38,6 +39,12 @@ const MyApp = ({ Component, pageProps }) => {
             color: #fff;
             font-weight: lighter;
           }
+          h2 {
+            font-size: 36px;
+            line-height: 36px;
+            color: #4c4c51;
+            font-weight: normal;
+          }
           h5 {
             font-size: 22px;
             line-height: 22px;
@@ -51,6 +58,14 @@ const MyApp = ({ Component, pageProps }) => {
             text-decoration: none !important;
           }
           a:hover {
+            color: #4c4c51;
+          }
+          main {
+            padding: 40px 10% 0px 10%;
+          }
+          p {
+            font-size: 22px;
+            line-height: 28px;
             color: #4c4c51;
           }
         `}</style>
