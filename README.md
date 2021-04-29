@@ -21,7 +21,7 @@
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/chelseaharris137/Weather-App.git
+   git clone https://github.com/chelseaharris137/Site-Mockup.git
    ```
 2. Install NPM packages
    ```sh
