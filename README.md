@@ -37,4 +37,10 @@
 
 ## Usage
 
-[INSERT SCREENSHOT HERE]
+<p align="center">
+Desktop Demo:
+<img src="readme-images/desktop-demo.gif" alt="Desktop demo">
+<br/>
+Mobile Demo:
+<img src="readme-images/mobile-demo-view.gif" alt="Mobile demo">
+</p>
