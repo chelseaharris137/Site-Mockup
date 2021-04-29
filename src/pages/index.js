@@ -7,7 +7,6 @@ const Page = () => {
   return (
     <div id="video-container">
       <Video />
-      <style jsx>{``}</style>
     </div>
   );
 };

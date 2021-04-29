@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import VideoContent from "../../api/vimeo.json";
 import Playbtn from "../images/playbtn.png";
 import TextBanner from "../components/TextBanner";
@@ -9,11 +9,10 @@ const Video = () => {
       {VideoContent.map((elem, idx) => {
         const imgArray = elem.thumbnail_large.split("");
         const img = imgArray.join("");
-        //i want to dagerously set the html and limit the display to a certain number of characters
         if (elem.title !== "Battleground" && elem.description) {
           return (
-            <div className="row" id={idx}>
-              <div className="column" id={`description-${idx}`}>
+            <div className="row" key={idx}>
+              <div className="column" key={`description-${idx}`}>
                 <a href={elem.url} target="_blank">
                   <h2>{elem.title}</h2>
                 </a>
@@ -27,7 +26,7 @@ const Video = () => {
                 <br />
                 &nbsp;
               </div>
-              <div className="column" id={`video-${idx}`}>
+              <div className="column" key={`video-${idx}`}>
                 <a href={elem.url} target="_blank">
                   <div
                     style={{
