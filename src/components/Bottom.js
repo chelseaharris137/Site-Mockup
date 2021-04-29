@@ -7,7 +7,7 @@ const Header = () => (
     <div>
       <Link href="/">
         <a>
-          <img src={Logo} />
+          <img src={Logo} id="btm-logo" />
         </a>
       </Link>
     </div>
@@ -30,7 +30,7 @@ const Header = () => (
     <style jsx>{`
       #btm-nav {
         display: grid;
-        grid-template-columns: 1fr 66% 1.3fr 1fr 1fr;
+        grid-template-columns: 1fr 60% 1.3fr 1fr 1fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas: ". . . . .";
@@ -38,6 +38,14 @@ const Header = () => (
       }
       .btm-links {
         line-height: 45px !important;
+      }
+      @media screen and (max-width: 600px) {
+        #btm-nav {
+          grid-template-columns: 1fr 6% 1.3fr 1fr 1fr;
+        }
+        #btm-logo {
+          display: none;
+        }
       }
     `}</style>
   </div>

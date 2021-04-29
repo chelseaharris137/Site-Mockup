@@ -28,11 +28,11 @@ const Header = () => (
           </Link>
         </div>
         <div>
-          <img src={UserImage} width="40" />
+          <img src={UserImage} width="40" id="user-image" />
         </div>
       </nav>
       <div id="cta-copy">
-        <h1>The world's greatest fake site</h1>
+        <h1>The world's greatest fake&nbsp;site</h1>
         <p>
           Create the world's greatest fake site and enjoy
           <br />
@@ -51,6 +51,7 @@ const Header = () => (
         }
         .image-container {
           background-image: url("${Background}");
+
           background-size: cover;
           background-position: center;
           width: 100%;
@@ -81,9 +82,12 @@ const Header = () => (
         .nav-link {
           padding-top: 5px;
         }
-        @media (max-width: 459px) {
+        @media (max-width: 600px) {
           .nav-link {
             display: none;
+          }
+          #user-image {
+            padding-left: 60px;
           }
         }
       `}
