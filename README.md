@@ -37,10 +37,10 @@
 
 ## Usage
 
-<p align="center">
-Desktop Demo:
+<p align="left">
+Desktop Demo:<br/>
 <img src="readme-images/desktop-demo.gif" alt="Desktop demo">
-<br/>
-Mobile Demo:
+<br/><br/>
+Mobile Demo:<br/>
 <img src="readme-images/mobile-demo-view.gif" alt="Mobile demo">
 </p>
